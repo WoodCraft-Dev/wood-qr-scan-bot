@@ -269,6 +269,11 @@ export default {
       this.expanded_panels = [0];
 
       if (!this.is_continuous_scan) {
+        // SOME SHIT XXX
+      let data = {
+        qr_code: "Fuck"
+      }
+        window.Telegram.WebApp.sendData(JSON.stringify(data));
         this.TMA.closeScanQrPopup();
       }
     },
