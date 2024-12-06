@@ -271,7 +271,7 @@ export default {
       if (!this.is_continuous_scan) {
         // SOME SHIT XXX-
       let qr_data = {
-        qr_code: data.data
+        qr_code: data
       }
         window.Telegram.WebApp.sendData(JSON.stringify(qr_data));
         this.TMA.closeScanQrPopup();
