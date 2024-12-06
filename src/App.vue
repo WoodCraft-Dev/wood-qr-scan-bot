@@ -270,10 +270,10 @@ export default {
 
       if (!this.is_continuous_scan) {
         // SOME SHIT XXX
-      let data = {
-        qr_code: "Fuck"
+      let qr_data = {
+        qr_code: data.data
       }
-        window.Telegram.WebApp.sendData(JSON.stringify(data));
+        window.Telegram.WebApp.sendData(JSON.stringify(qr_data));
         this.TMA.closeScanQrPopup();
       }
     },
