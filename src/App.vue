@@ -269,7 +269,7 @@ export default {
       this.expanded_panels = [0];
 
       if (!this.is_continuous_scan) {
-        // SOME SHIT XXX
+        // SOME SHIT XXX-
       let qr_data = {
         qr_code: data.data
       }
